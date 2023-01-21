@@ -1,0 +1,5 @@
+# 忽略的文件
+Icon
+.DS_Store
+**/.DS_Store
+.DS_Store?
