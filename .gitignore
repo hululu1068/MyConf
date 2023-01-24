@@ -1,6 +1,7 @@
 # 忽略的文件
 Icon
 Icon\r
+Icon?
 .DS_Store
 **/.DS_Store
 .DS_Store?
