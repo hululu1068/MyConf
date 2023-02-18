@@ -1,0 +1,37 @@
+[
+    {
+        "bundleID": "com.miHoYo.GenshinImpact",
+        "name": "Genshin Impact",
+        "version": "2.8.0",
+        "itunesLookup": "http://itunes.apple.com/lookup?bundleId=com.miHoYo.GenshinImpact",
+        "link": "https://ipa.playcover.workers.dev/0:/Genshin%20Impact/US/Genshin%20Impact_2.8.0.ipa"
+    },
+    {
+            "bundleID": "com.blizzard.diablo.immortal",
+            "name": "Diablo Immortal",
+            "version": "1.5.2",
+            "itunesLookup": "http://itunes.apple.com/lookup?bundleId=com.blizzard.diablo.immortal",
+            "link": "https://ipa.playcover.workers.dev/1:/IPAs/Diablo%20Immortal/Diablo%20Immortal_1.5.2.ipa"
+    },
+    {
+            "bundleID": "com.netflix.Netflix",
+            "name": "Netflix",
+            "version": "14.53.0",
+            "itunesLookup": "http://itunes.apple.com/lookup?bundleId=com.netflix.Netflix",
+            "link": "https://ipa.playcover.workers.dev/1:/IPAs/Netflix/Netflix_14.53.0.ipa"
+    },
+    {
+            "bundleID": "com.google.ios.youtube",
+            "name": "YouTube",
+            "version": "17.38.9",
+            "itunesLookup": "http://itunes.apple.com/lookup?bundleId=com.google.ios.youtube",
+            "link": "https://ipa.playcover.workers.dev/1:/IPAs/YouTube/YouTube_17.38.9.ipa"
+    },
+    {
+        "bundleID": "com.nintendo.znma",
+        "name": "Nintendo Switch Parental Controls",
+        "version": "1.17.0",
+        "itunesLookup": "http://itunes.apple.com/lookup?bundleId=com.nintendo.znma",
+        "link": "https://ipa.playcover.workers.dev/0:/Nintendo%20Switch%20Parental%20Controls/Nintendo%20Switch%20Parental%20Controls_1.17.0.ipa"
+    }
+]
