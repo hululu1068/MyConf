@@ -23,7 +23,7 @@ curl -sL yabs.sh | bash -s -- -ig
 bash <(wget -qO- https://bench.im/hyperspeed)
 ```
 ```
-直接显示回程线路
+直接显示回程线路(root)
 curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh | bash
 ```
 ```
