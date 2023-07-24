@@ -24,7 +24,7 @@ bash <(wget -qO- https://bench.im/hyperspeed)
 ```
 ```
 直接显示回程线路
-curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash
+curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh | bash
 ```
 ```
 BestTrace
