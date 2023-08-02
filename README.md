@@ -40,6 +40,7 @@ wget -O jcnf.sh https://raw.githubusercontent.com/Netflixxp/jcnfbesttrace/main/j
 ```
 ```
 流媒体解锁
+脚本适配OS: CentOS 6+, Ubuntu 14.04+, Debian 8+, MacOS, Android (Termux), iOS (iSH)
 bash <(curl -L -s check.unlock.media)
 ```
 ```
