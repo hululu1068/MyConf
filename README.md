@@ -53,3 +53,11 @@ wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.5/nf_2.5
 CPU 信息、Geekbench 等：
 bash <(wget --no-check-certificate -O- https://dl.233.mba/d/sh/superbenchpro.sh)
 ```
+```
+Bench.sh (轻量)
+wget -qO- bench.sh | bash
+```
+```
+LemonBench-Next (全面)
+wget -qO- https://raw.githubusercontent.com/LemonBench/LemonBench/main/LemonBench.sh | bash -s -- --fast
+```
