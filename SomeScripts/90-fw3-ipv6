@@ -1,0 +1,11 @@
+#!/bin/sh
+[ "$ACTION" = ifup ] || exit 0
+iface_dhcp=wan_6
+iface_route=pppoe-wan
+[ -z "$iface_dhcp" -o "$INTERFACE" = "$iface_dhcp" ] || exit 0
+
+ip6tables -t nat -I POSTROUTING -s `uci get network.globals.ula_prefix` -j MASQUERADE
+ula=$(uci get network.globals.ula_prefix)
+gw=$(ip -6 route show default | grep $iface_route | head -n1 | sed 's/default from [^ ]* via //')
+status=$(ip -6 route add default from $ula via $gw 2>&1)
+logger -t IPv6 "Done: $status"

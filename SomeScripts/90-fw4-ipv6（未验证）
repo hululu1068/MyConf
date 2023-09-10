@@ -1,0 +1,63 @@
+#!/bin/sh
+[ "$ACTION" = ifup ] || exit 0
+iface_dhcp=wan_6
+iface_route=pppoe-wan
+
+[ -z "$iface_dhcp" -o "$INTERFACE" = "$iface_dhcp" ] || exit 0
+
+ula=$(uci get network.globals.ula_prefix)
+nft add rule srcnat_wan ipv6 saddr $ula oifname $iface_route masquerade comment "!fw4: NAT6"
+
+gw=$(ip -6 route show default | grep $iface_route | head -n1 | sed 's/default from [^ ]* via //')
+status=$(nft add rule route6 main table main dst $ula to $gw 2>&1)
+logger -t IPv6 "Done: $status"
+
+
+
+
+
+
+
+
+
+
+########################################
+注意使用英文输入法
+三种直接写法：
+# nft add rule srcnat_wan postrouting ipv6 saddr { dd00:1111:2222:3333::/64 } oifname "pppoe-wan" masquerade comment "!fw4: NAT6"
+# nft add rule srcnat_wan ipv6 saddr dd00:1111:2222:3333::/64 oifname pppoe-wan masquerade comment "!fw4: NAT6"
+# nft add rule srcnat_wan ipv6 saddr dd00:1111:2222:3333::/64 oifname pppoe-wan masquerade
+
+### 命令说明 ###
+- nft add rule 表示添加一条新规则；
+- srcnat_wan 表示在名为 srcnat_wan 的链中添加规则；
+- comment "!fw4: NAT6" 表示添加注释为 "!fw4: NAT6"；可省略
+- ip6 saddr dd00:1111:2222:3333::/64 表示匹配源 IPv6 地址为 dd00:1111:2222:3333::/64 的数据包；
+- oifname pppoe-wan 表示数据包的输出接口为 pppoe-wan；
+- masquerade 表示对数据包执行伪装操作，将源 IPv6 地址改为出接口的 IPv6 地址，实现 NAT 功能。
+
+你需要将 dd00:1111:2222:3333::/64 和 pppoe-wan 替换为实际的 IPv6 地址和接口名。
+
+
+# 以上，srcnat_wan 的链是系统防火墙自动创建的，如果出错，可改为
+nft add rule nat postrouting ip6 saddr dd00:1111:2222:3333::/64 oifname pppoe-wan masquerade comment “!fw4: NAT6”
+- nat postrouting 表示将规则放在 nat 表的 postrouting 链中
+
+
+
+=======================================
+### 备注 ###
+
+nftables 是一个netfilter项目，旨在替换现有的{ip,ip6,arp,eb}tables框架，为{ip,ip6}tables提供一个新的包过滤框架、一个新的用户空间实用程序（nft）和一个兼容层。
+nftables的用户空间实用程序nft评估大多数规则集并传递到内核。规则存储在链中，链存储在表中。
+
+
+# 匹配参数说明
+
+  oif <output interface INDEX | 输出接口索引>
+  iif <input interface INDEX | 输入接口索引>
+  oifname <output interface NAME | 输出接口名称>
+  iifname <input interface NAME | 输入接口名称>
+
+  （oif 和 iif 接受字符串参数并转换为接口索引）
+  （oifname 和 iifname 更具动态性，但因字符串匹配速度稍慢）
