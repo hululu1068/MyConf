@@ -2,8 +2,10 @@
 #EXT-X-APP APTV
 #EXT-X-APTV-TYPE local
 
-#EXTINF:-1 group-title="未分类",广东体育
-http://113.64.147.231:8081/hls/1/index.m3u8
+#可用IP 113.64.147.(30,60,129,140,152,165,231,251)
+
+#EXTINF:-1 group-title="未分类",CCTV1
+http://113.64.147.231:8081/hls/138/index.m3u8
 #EXTINF:-1 group-title="未分类",CCTV2
 http://113.64.147.231:8081/hls/2/index.m3u8
 #EXTINF:-1 group-title="未分类",CCTV6
@@ -36,6 +38,14 @@ http://113.64.147.231:8081/hls/14/index.m3u8
 http://113.64.147.231:8081/hls/16/index.m3u8
 #EXTINF:-1 group-title="未分类",CCTV17
 http://113.64.147.231:8081/hls/17/index.m3u8
+#EXTINF:-1 group-title="未分类",CCTV 奥林匹克
+http://113.64.147.231:8081/hls/143/index.m3u8
+#EXTINF:-1 group-title="未分类",CCTV 4K
+http://113.64.147.231:8081/hls/144/index.m3u8
+#EXTINF:-1 group-title="未分类",广东卫视
+http://113.64.147.231:8081/hls/140/index.m3u8
+#EXTINF:-1 group-title="未分类",广东体育
+http://113.64.147.231:8081/hls/1/index.m3u8
 #EXTINF:-1 group-title="未分类",广东少儿
 http://113.64.147.231:8081/hls/19/index.m3u8
 #EXTINF:-1 group-title="未分类",深圳 电视剧
@@ -44,10 +54,6 @@ http://113.64.147.231:8081/hls/18/index.m3u8
 http://113.64.147.231:8081/hls/22/index.m3u8
 #EXTINF:-1 group-title="未分类",揭阳 综合
 http://113.64.147.231:8081/hls/21/index.m3u8
-#EXTINF:-1 group-title="未分类",翡翠台
-http://113.64.147.231:8081/hls/25/index.m3u8
-#EXTINF:-1 group-title="未分类",翡翠 记录片
-http://113.64.147.231:8081/hls/26/index.m3u8
 #EXTINF:-1 group-title="未分类",广东 经济科教
 http://113.64.147.231:8081/hls/29/index.m3u8
 #EXTINF:-1 group-title="未分类",广东新闻
@@ -70,6 +76,10 @@ http://113.64.147.231:8081/hls/39/index.m3u8
 http://113.64.147.231:8081/hls/38/index.m3u8
 #EXTINF:-1 group-title="未分类",凤凰HD
 http://113.64.147.231:8081/hls/37/index.m3u8
+#EXTINF:-1 group-title="未分类",翡翠台
+http://113.64.147.231:8081/hls/25/index.m3u8
+#EXTINF:-1 group-title="未分类",翡翠 记录片
+http://113.64.147.231:8081/hls/26/index.m3u8
 #EXTINF:-1 group-title="未分类",广东卫视
 http://113.64.147.231:8081/hls/40/index.m3u8
 #EXTINF:-1 group-title="未分类",浙江卫视
@@ -130,20 +140,12 @@ http://113.64.147.231:8081/hls/75/index.m3u8
 http://113.64.147.231:8081/hls/106/index.m3u8
 #EXTINF:-1 group-title="未分类",TVB
 http://113.64.147.231:8081/hls/135/index.m3u8
-#EXTINF:-1 group-title="未分类",广东卫视
-http://113.64.147.231:8081/hls/140/index.m3u8
-#EXTINF:-1 group-title="未分类",CCTV1
-http://113.64.147.231:8081/hls/138/index.m3u8
 #EXTINF:-1 group-title="未分类",广东珠江
 http://113.64.147.231:8081/hls/139/index.m3u8
 #EXTINF:-1 group-title="未分类",深圳电视剧
 http://113.64.147.231:8081/hls/141/index.m3u8
 #EXTINF:-1 group-title="未分类",深圳体育健康
 http://113.64.147.231:8081/hls/142/index.m3u8
-#EXTINF:-1 group-title="未分类",CCTV 奥林匹克
-http://113.64.147.231:8081/hls/143/index.m3u8
-#EXTINF:-1 group-title="未分类",CCTV 4K
-http://113.64.147.231:8081/hls/144/index.m3u8
 #EXTINF:-1 group-title="未分类",广东 4K
 http://113.64.147.231:8081/hls/145/index.m3u8
 #EXTINF:-1 group-title="未分类",动漫秀场
