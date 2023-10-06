@@ -1,6 +1,13 @@
 # 一些测试
 
-### 机器测试
+### [融合怪](https://virt.spiritlhl.net/case/case2.html)测试
+```
+交换式
+curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
+```
+
+
+### 机器性能测试
 ```
 单线程测试
 bash <(curl -Lso- https://bench.im/hyperspeed)
@@ -8,10 +15,6 @@ bash <(curl -Lso- https://bench.im/hyperspeed)
 ```
 Bench.sh
 wget -qO- bench.sh | bash
-```
-```
-最全测速脚本
-curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
 ```
 ```
 硬盘
