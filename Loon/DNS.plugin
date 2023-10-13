@@ -9,17 +9,17 @@
 # --- CUSTOM DNS ---
 # > Encrypted DNS
 dns.google = 8.8.8.8
+dns64.dns.google = 2001:4860:4860::6464
+cloudflare-dns.com = 104.16.249.249
+1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1
 one.one.one.one = 1.1.1.1
-dns64.dns.google = server:8.8.8.8
-cloudflare-dns.com = server:1.1.1.1
-1dot1dot1dot1.cloudflare-dns.com = server:1.1.1.1
-dns.alidns.com = server:114.114.114.114
-doh.pub = server:114.114.114.114
-dot.pub = server:114.114.114.114
+dns.alidns.com = 223.5.5.5
+doh.pub = 1.12.12.12
+dot.pub = 120.53.53.53
 doh.360.cn = server:114.114.114.114
 dot.360.cn = server:114.114.114.114
-dns.twnic.tw = server:114.114.114.114
-ordns.he.net = server:114.114.114.114
+dns.twnic.tw = 101.101.101.101
+ordns.he.net = 74.82.42.42
 
 # Synology Router
 router.synology.com = server:system
