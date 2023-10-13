@@ -5,21 +5,21 @@
 #!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
 #!update = 2023-09-29
 
-[Host]
+[Host/DNS]
 # --- CUSTOM DNS ---
 # > Encrypted DNS
 dns.google = 8.8.8.8
-dns64.dns.google = 2001:4860:4860::6464
-cloudflare-dns.com = 104.16.249.249
-1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1
 one.one.one.one = 1.1.1.1
-dns.alidns.com = 223.5.5.5
-doh.pub = 1.12.12.12
-dot.pub = 1.12.12.12
-doh.360.cn = 23.6.48.18
-dot.360.cn = 101.198.198.198
-dns.twnic.tw = 101.101.101.101
-ordns.he.net = 74.82.42.42
+dns64.dns.google = server:8.8.8.8
+cloudflare-dns.com = server:1.1.1.1
+1dot1dot1dot1.cloudflare-dns.com = server:1.1.1.1
+dns.alidns.com = server:114.114.114.114
+doh.pub = server:114.114.114.114
+dot.pub = server:114.114.114.114
+doh.360.cn = server:114.114.114.114
+dot.360.cn = server:114.114.114.114
+dns.twnic.tw = server:114.114.114.114
+ordns.he.net = server:114.114.114.114
 
 # Synology Router
 router.synology.com = server:system
@@ -78,6 +78,7 @@ stun?.l.google.com = server:https://doh.pub/dns-query
 *.youtube.com = server:https://dns.google/dns-query
 # Youtube 图片
 *.ytimg.com = server:https://dns.google/dns-query
+*.ggpht.com = server:https://dns.google/dns-query
 # Youtube Video
 *.googlevideo.com = server:https://dns.google/dns-query
 # Google Video Thumbnails
