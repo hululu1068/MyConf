@@ -1,7 +1,7 @@
 #!name= JDCookie获取
 #!openUrl= https://bean.m.jd.com/bean/signIndex.action
 #!desc= 查看脚本说明 | 提示获取成功后，读取指定数据KEY"CookiesJD"
-#!icon= https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
+#!icon= https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/jd.png
 #!author= B3TT3R引用自@NobyDa
 #!homepage= https://github.com/NobyDa/Script/tree/master
 #!update = 2023-10-17
