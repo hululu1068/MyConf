@@ -2,10 +2,14 @@
 
 ### [融合怪](https://virt.spiritlhl.net/case/case2.html)测试
 ```
-交换式
+交互式
 curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
 ```
-
+### 科技lion—键脚本工具
+```
+支持Debian系
+curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
+```
 
 ### 机器性能测试
 ```
