@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 #!author=B3TT3R
 #!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
-#!update = 2023-09-30
+#!update = 2024-01-20
 
 [Host]
 # --- CUSTOM DNS ---
@@ -37,7 +37,7 @@ networking.apple = server:https://doh.dns.apple.com/dns-query
 # iCloud.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query
 # Apple-CN
-netcts.cdn-apple.com = server:system
+netcts.cdn-apple.com = server:https://doh.pub/dns-query
 apple-mapkit.com = server:119.29.29.29
 
 # Google CDN
@@ -379,77 +379,35 @@ dwz.cn = server:180.76.76.76
 *.zjcdn.com = server:180.184.1.1
 
 # > BiliBili
-*.bilibili.com = server:system
+*.bilibili.com = server:https://223.5.5.5/dns-query
 # BiliBili API
-*.biliapi.com = server:system
-*.biliapi.net = server:system
+*.biliapi.com = server:https://223.5.5.5/dns-query
+*.biliapi.net = server:https://223.5.5.5/dns-query
 # BiliBili CDN
-*.bilicdn?.com = server:system
+*.bilicdn?.com = server:https://223.5.5.5/dns-query
 # BiliBili 静态资源
-*.hdslb.com = server:system
-*.hdslb.net = server:system
+*.hdslb.com = server:https://223.5.5.5/dns-query
+*.hdslb.net = server:https://223.5.5.5/dns-query
 # BiliBili 视频
-cn-hk-eq-bcache-??.bilivideo.com = server:system
-# BiliBili upos视频服务器（akamai）
-upos-hz-mirrorakam.akamaized.net = server:system
-# BiliBili upos视频服务器（asia-abroad.com）
-upos-sz-mirrorasiaov.bilibilivideo.com = server:system
-# BiliBili upos视频服务器（阿里云）
-upos-sz-mirrorali.bilivideo.com = server:https://dns.alidns.com/dns-query
-upos-sz-mirrorali?.bilivideo.com = server:https://dns.alidns.com/dns-query
-upos-sz-mirrorali??.bilivideo.com = server:https://dns.alidns.com/dns-query
-# BiliBili upos视频服务器（百度云）
-upos-sz-mirrorbos.bilivideo.com = server:180.76.76.76
-# BiliBili upos视频服务器（腾讯云）
-upos-sz-mirrorcos.bilivideo.com = server:https://doh.pub/dns-query
-upos-sz-mirrorcos?.bilivideo.com = server:https://doh.pub/dns-query
-upos-sz-mirrorcos??.bilivideo.com = server:https://doh.pub/dns-query
-# BiliBili upos视频服务器（华为云）
-upos-sz-mirrorhw.bilivideo.com = server:system
-upos-sz-mirrorhw?.bilivideo.com = server:system
-upos-sz-mirrorhwo?.bilivideo.com = server:system
-# BiliBili upos视频服务器（金山云）
-upos-sz-mirrorks3.bilivideo.com = server:system
-upos-sz-mirrorks3?.bilivideo.com = server:system
-# BiliBili upos视频服务器（七牛云）
-upos-sz-mirrorkodo.bilivideo.com = server:system
-upos-sz-mirrorkodo?.bilivideo.com = server:system
-# BiliBili upos视频服务器（网宿）
-upos-sz-mirrorwcs.bilivideo.com = server:system
-upos-sz-mirrorwcs?.bilivideo.com = server:system
-# BiliBili upos视频服务器（迅雷）
-upos-sz-mirrorxycdn.bilivideo.com = server:system
-# BiliBili upos视频服务器（百度云）
-upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76
-# BiliBili upos视频服务器
-upos-sz-upcdnhw.bilivideo.com = server:system
-# BiliBili upos视频服务器（腾讯云）
-upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
-# BiliBili upos视频服务器
-upos-sz-upcdnws.bilivideo.com = server:system
-upos-tf-all-js.bilivideo.com = server:system
-# BiliBili mCDN视频服务器
-*.mcdn.bilivideo.com = server:system
-# BiliBili 视频
-*.bilivideo.com = server:system
-*.bilivideo.cn = server:system
+*.bilivideo.com = server:https://223.5.5.5/dns-query
+*.bilivideo.cn = server:https://223.5.5.5/dns-query
 # BiliBili短网址
-acg.tv = server:system
+acg.tv = server:https://223.5.5.5/dns-query
 
 # > 京东
-*.jd.com = server:system
+*.jd.com = server:https://doh.pub/dns-query
 # 京东 静态资源
-*.360buyimg.com = server:system
+*.360buyimg.com = server:https://doh.pub/dns-query
 # 京东云
-*.jdcloud.com = server:system
+*.jdcloud.com = server:https://doh.pub/dns-query
 # 京东云 缓存和存储
-*.jcloudstatic.com = server:system
+*.jcloudstatic.com = server:https://doh.pub/dns-query
 # 京东云 静态资源
-*.jcloudstatic.net = server:system
+*.jcloudstatic.net = server:https://doh.pub/dns-query
 # 京东云 全局负载均衡
-*.jdgslb.com = server:system
+*.jdgslb.com = server:https://doh.pub/dns-query
 # 京东短网址
-3.cn = server:system
+3.cn = server:https://doh.pub/dns-query
 
 # > 🇨🇳 CHN
 # CNNIC SDNS
