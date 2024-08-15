@@ -1,0 +1,613 @@
+#!name=🌏DNS映射
+#!desc=1.特定域名使用指定DNS进行解析 2.特殊地址使用规范DNS进行解析
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+#!author=B3TT3R
+#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
+#!update = 2024-08-15
+
+[Host]
+# --- CUSTOM DNS ---
+# > Encrypted DNS
+dns.google = 8.8.8.8
+dns64.dns.google = 2001:4860:4860::6464
+cloudflare-dns.com = 104.16.249.249
+1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1
+one.one.one.one = 1.1.1.1
+dns.alidns.com = 223.5.5.5
+doh.pub = 1.12.12.12
+dot.pub = 1.12.12.12
+doh.360.cn = 23.6.48.18
+dot.360.cn = 101.198.198.198
+dns.twnic.tw = 101.101.101.101
+ordns.he.net = 74.82.42.42
+
+# Synology Router
+router.synology.com = server:system
+# Asus Router
+router.asus.com = server:system
+# 小米 Mi WiFi Router
+www.miwifi.com = server:system
+miwifi.com = server:system
+
+# > Apple
+# refer: https://support.apple.com/zh-cn/HT210060
+networking.apple = server:https://doh.dns.apple.com/dns-query
+# Apple.com
+*.apple.com = server:119.29.29.29
+# iCloud.com
+*.icloud.com = server:https://doh.dns.apple.com/dns-query
+# Apple-CN
+netcts.cdn-apple.com = server:https://doh.pub/dns-query
+apple-mapkit.com = server:119.29.29.29
+
+# Google CDN
+blog.google = server:8.8.8.8
+googletraveladservices.com = server:8.8.8.8
+dl.google.com = server:8.8.8.8
+dl.l.google.com = server:8.8.8.8
+clientservices.googleapis.com = server:8.8.8.8
+update.googleapis.com = server:8.8.8.8
+translate.googleapis.com = server:8.8.8.8
+fonts.googleapis.com = server:8.8.8.8
+fonts.gstatic.com = server:8.8.8.8
+
+# Google STUN
+stun.l.google.com = server:https://doh.pub/dns-query
+stun?.l.google.com = server:https://doh.pub/dns-query
+
+# > Alphabet
+# refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
+# *.google = server:https://dns.google/dns-query
+*.google.com = server:https://dns.google/dns-query
+*.google.com.?? = server:https://dns.google/dns-query
+# Google sites
+# *.goog = server:https://dns.google/dns-query
+# Google 静态资源
+*.gstatic.com = server:https://dns.google/dns-query
+# Google Photos
+*.ggpht.com = server:https://dns.google/dns-query
+# Google 用户上传数据
+*.googleusercontent.com = server:https://dns.google/dns-query
+# Google APIs
+*.googleapis.com = server:https://dns.google/dns-query
+# Google backbone
+*.1e100.net = server:https://dns.google/dns-query
+# Youtube sites
+*.youtube = server:https://dns.google/dns-query
+# Youtube
+*.youtube.com = server:https://dns.google/dns-query
+# Youtube 图片
+*.ytimg.com = server:https://dns.google/dns-query
+# Youtube Video
+*.googlevideo.com = server:https://dns.google/dns-query
+# Google Video Thumbnails
+*.gvt?.com = server:https://dns.google/dns-query
+# reCaptcha
+*.recaptcha.net = server:https://dns.google/dns-query
+# Gmail
+*.gmail.com = server:https://dns.google/dns-query
+# Google Source
+*.googlesource.com = server:https://dns.google/dns-query
+# Google AD Services
+*.googleadservices.com = server:https://dns.adguard-dns.com/dns-query
+# DoubleClick
+*.doubleclick.net = server:https://dns.google/dns-query
+# AdSense
+*.adsense.com = server:https://dns.adguard-dns.com/dns-query
+# AdSense Custom Search Ads
+*.adsensecustomsearchads.com = server:https://dns.adguard-dns.com/dns-query
+# AdSense for mobile apps
+*.adsenseformobileapps.com = server:https://dns.adguard-dns.com/dns-query
+# Google shortened URLs
+*.gle = server:https://dns.google/dns-query
+# Google URL Shortener
+goo.gl = server:https://dns.google/dns-query
+
+# Twitter / X
+twitter.com = server:https://dns.google/dns-query
+t.co = server:https://dns.google/dns-query
+twimg.com = server:https://dns.google/dns-query
+x.com = server:https://dns.google/dns-query
+pscp.tv = server:https://dns.google/dns-query
+
+# Telegram
+graph.org = server:https://dns.google/dns-query
+t.me = server:https://dns.google/dns-query
+telegram.me = server:https://dns.google/dns-query
+telegram.org = server:https://dns.google/dns-query
+tg.dev = server:https://dns.google/dns-query
+tx.me = server:https://dns.google/dns-query
+
+# > Cloudflare
+# refer: https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/
+*.cloudflare.com = server:1.1.1.1
+# Cloudflare Stream
+*.cloudflarestream.com = server:1.1.1.1
+# Cloudflare Client
+*.cloudflareclient.com = server:1.1.1.1
+# Cloudflare Web Analytics
+*.cloudflareinsights.com = server:https://1.1.1.1/dns-query
+# Cloudflare 1.1.1.1
+*.every1dns.net = server:https://1.1.1.1/dns-query
+# Cloudflare SSL Certificate
+# *.cloudflaressl.com = server:https://1.1.1.1/dns-query
+# Cloudflare DNS
+*.cloudflare-dns.com = server:https://1.1.1.1/dns-query
+# CloudFlare Workers
+*.workers.dev = server:https://1.1.1.1/dns-query
+
+# > 阿里巴巴
+# refer: https://www.alidns.com
+*.alibaba.cn = server:https://dns.alidns.com/dns-query
+*.alibaba.com.cn = server:https://dns.alidns.com/dns-query
+# Alibaba 中国
+*.china.alibaba.com = server:https://dns.alidns.com/dns-query
+# 1688
+*.1688.com = server:https://dns.alidns.com/dns-query
+# 淘宝
+*.taobao.com = server:https://dns.alidns.com/dns-query
+# 淘宝 缓存
+*.tbcache.com = server:https://dns.alidns.com/dns-query
+# 天猫
+*.tmall.com = server:https://dns.alidns.com/dns-query
+# 阿里 CDN
+*.alicdn.com = server:https://dns.alidns.com/dns-query
+# 阿里昆仑
+*.alikunlun.com = server:https://dns.alidns.com/dns-query
+# 云引擎应用平台
+*.aliapp.com = server:https://dns.alidns.com/dns-query
+# 上云平台
+*.aliapp.org = server:https://dns.alidns.com/dns-query
+# 阿里用户上传资料
+*.alibabausercontent.com = server:https://dns.alidns.com/dns-query
+# mmstat 数据统计 广告追踪
+*.mmstat.com = server:https://dns.alidns.com/dns-query
+# 淘宝短网址
+tb.cn = server:https://dns.alidns.com/dns-query
+
+# > 阿里云
+# refer: https://www.alidns.com
+# 阿里云
+*.aliyun.* = server:https://dns.alidns.com/dns-query
+# 阿里云 CDN
+*.aliyuncdn.* = server:https://dns.alidns.com/dns-query
+# 阿里云 API 服务
+*.aliyuncs.com = server:https://dns.alidns.com/dns-query
+# 阿里云 DDoS防护
+*.aliyunddos????.com = server:https://dns.alidns.com/dns-query
+# 阿里云盘
+*.aliyundrive.com = server:https://dns.alidns.com/dns-query
+# 阿里云盾
+*.aliyundun.com = server:https://dns.alidns.com/dns-query
+# 阿里云盾 Web 应用防火墙
+*.aliyundunwaf.com = server:https://dns.alidns.com/dns-query
+# 阿里云 内部
+*.aliyun-inc.com = server:https://dns.alidns.com/dns-query
+
+# > 蚂蚁集团
+# refer: https://www.alidns.com
+*.antgroup.com = server:https://dns.alidns.com/dns-query
+# 蚂蚁金服
+*.antfin.com = server:https://dns.alidns.com/dns-query
+*.antfinancial.com = server:https://dns.alidns.com/dns-query
+# 支付宝
+*.alipay.com = server:https://dns.alidns.com/dns-query
+*.alipay.com.cn = server:https://dns.alidns.com/dns-query
+# 支付宝 HTTP DNS
+*.alipaydns.com = server:https://dns.alidns.com/dns-query
+# 支付宝 商家资源
+*.alipayeshop.com = server:https://dns.alidns.com/dns-query
+# 支付宝 Mdap
+*.alipaylog.com = server:https://dns.alidns.com/dns-query
+# 支付宝 静态资源
+*.alipayobjects.com = server:https://dns.alidns.com/dns-query
+# 支付宝 开放技术生态体系
+*.alipay-eco.com = server:https://dns.alidns.com/dns-query
+
+# > 腾讯
+# refer: https://www.dnspod.cn/products/publicdns
+*.tencent.com = server:https://doh.pub/dns-query
+# 腾讯云
+*.qcloud.com = server:https://doh.pub/dns-query
+# 腾讯云CDN
+*.qcloudcdn.cn = server:https://doh.pub/dns-query
+*.qcloudcdn.com = server:https://doh.pub/dns-query
+# 腾讯云对象储存
+*.qcloudcos.com = server:https://doh.pub/dns-query
+# 腾讯云静态资源
+*.qcloudimg.com = server:https://doh.pub/dns-query
+# 腾讯云超级管家
+*.qcloudcjgj.com = server:https://doh.pub/dns-query
+# 腾讯云网站管家
+*.qcloudwzgj.com = server:https://doh.pub/dns-query
+# 腾讯云主页管家
+*.qcloudzygj.com = server:https://doh.pub/dns-query
+# 腾讯开放云
+*.myqcloud.com = server:https://doh.pub/dns-query
+# 腾讯云
+*.tencent-cloud.net = server:https://doh.pub/dns-query
+# 腾讯云aiot解决方案
+*.tencentcloud-aiot.com = server:https://doh.pub/dns-query
+# 腾讯云API
+*.tencentcloudapi.com = server:https://doh.pub/dns-query
+# 腾讯云容器镜像服务TCR
+*.tencentcloudcr.com = server:https://doh.pub/dns-query
+# 腾讯云云市场
+*.tencentcloudmarket.com = server:https://doh.pub/dns-query
+# QQ
+*.qq.com = server:https://doh.pub/dns-query
+# 腾讯头像
+*.qlogo.cn = server:https://doh.pub/dns-query
+# 腾讯图片
+*.qpic.cn = server:https://doh.pub/dns-query
+# 微信
+*.weixin.qq.com = server:https://doh.pub/dns-query
+*.wx.qq.com = server:https://doh.pub/dns-query
+*.weixin.com = server:https://doh.pub/dns-query
+# 微信公众平台
+*.weixinbridge.com = server:https://doh.pub/dns-query
+# WeChat
+*.wechat.com = server:https://doh.pub/dns-query
+# 微信小程序
+*.servicewechat.com = server:https://doh.pub/dns-query
+# 微云
+*.weiyun.com = server:https://doh.pub/dns-query
+# 腾讯 图片 静态资源
+*.gtimg.cn = server:https://doh.pub/dns-query
+*.idqqimg.com = server:https://doh.pub/dns-query
+# 腾讯 静态资源 CDN
+*.cdn-go.cn = server:https://doh.pub/dns-query
+# 腾讯云 智能云解析DNS
+*.smtcdns.com = server:https://doh.pub/dns-query
+*.smtcdns.net = server:https://doh.pub/dns-query
+# 腾讯短网址
+url.cn = server:https://doh.pub/dns-query
+
+# > 百度
+# refer: https://dudns.baidu.com/support/localdns/Address/index.html
+*.baidu = server:180.76.76.76
+*.baidu.com = server:180.76.76.76
+# 百度 静态资源
+*.bdimg.com = server:180.76.76.76
+*.bdstatic.com = server:180.76.76.76
+# 百度网盘
+*.baidupcs.* = server:180.76.76.76
+# 百度云CDN
+*.baiduyuncdn.* = server:180.76.76.76
+# 百度云DNS
+*.baiduyundns.* = server:180.76.76.76
+# 百度云 DNS
+*.bdydns.* = server:180.76.76.76
+# 百度云 CDN
+*.bdycdn.* = server:180.76.76.76
+# 百度云 域名
+*.bdysite.com = server:180.76.76.76
+*.bdysites.com = server:180.76.76.76
+# 百度智能云
+*.baidubce.* = server:180.76.76.76
+# 百度智能云 DNS
+*.bcedns.* = server:180.76.76.76
+# 百度智能云 对象存储BOS
+*.bcebos.com = server:180.76.76.76
+# 百度智能云 播放器服务
+*.bcevod.com = server:180.76.76.76
+# 百度智能云 图片服务
+*.bceimg.com = server:180.76.76.76
+# 百度智能云 主机
+*.bcehost.com = server:180.76.76.76
+*.bcehosts.com = server:180.76.76.76
+# 百度短网址
+dwz.cn = server:180.76.76.76
+
+# > Bytedance
+# refer: https://www.volcengine.com/docs/6758/179060
+# 艾特迷
+*.amemv.com = server:180.184.1.1
+# 西瓜 图片服务
+*.bdxiguaimg.com = server:180.184.1.1
+# 西瓜 静态资源
+*.bdxiguastatic.com = server:180.184.1.1
+# 字节跳动 UNPKG
+*.byted-static.com = server:180.184.1.1
+# 字节跳动
+*.bytedance.* = server:180.184.1.1
+# 字节跳动 DNS
+*.bytedns.net = server:180.184.1.1
+# 字节跳动 CDN 文件存储
+*.bytednsdoc.com = server:180.184.1.1
+# 字节跳动 Goofy
+*.bytegoofy.com = server:180.184.1.1
+# 字节跳动 图片服务
+*.byteimg.com = server:180.184.1.1
+# 字节跳动 SCM
+*.bytescm.com = server:180.184.1.1
+# 字节跳动 TOS
+*.bytetos.com = server:180.184.1.1
+# 飞书企业服务平台
+*.bytexservice.com = server:180.184.1.1
+# 抖音
+*.douyin.com = server:180.184.1.1
+# 抖音 静态资源
+*.douyinpic.com = server:180.184.1.1
+# 抖音 静态资源
+*.douyinstatic.com = server:180.184.1.1
+# 抖音 静态资源
+*.douyinvod.com = server:180.184.1.1
+# FeelGood平台
+*.feelgood.cn = server:180.184.1.1
+# 飞聊官网
+*.feiliao.com = server:180.184.1.1
+# 快手
+*.gifshow.com = server:180.184.1.1
+# 火山网
+*.huoshan.com = server:180.184.1.1
+# 火山直播
+*.huoshanzhibo.com = server:180.184.1.1
+# 抖音 dapm
+*.ibytedapm.com = server:180.184.1.1
+# 抖音 CDN
+*.iesdouyin.com = server:180.184.1.1
+# 西瓜视频
+*.ixigua.com = server:180.184.1.1
+# 快手
+*.kspkg.com = server:180.184.1.1
+# 抖音 静态资源
+*.pstatp.com = server:180.184.1.1
+# 今日头条
+*.snssdk.com = server:180.184.1.1
+# 今日头条
+*.toutiao.com = server:180.184.1.1
+# 今日头条
+*.toutiao13.com = server:180.184.1.1
+# 今日头条 静态资源
+*.toutiao???.??? = server:180.184.1.1
+# 头条云
+*.toutiaocloud.cn = server:180.184.1.1
+# 头条云
+*.toutiaocloud.com = server:180.184.1.1
+# 今日头条 建站
+*.toutiaopage.com = server:180.184.1.1
+# 悟空
+*.wukong.com = server:180.184.1.1
+# 字节跳动 API
+*.zijieapi.com = server:180.184.1.1
+# 字节跳动 图片服务
+*.zijieimg.com = server:180.184.1.1
+# 今日头条 网页版
+*.zjbyte.com = server:180.184.1.1
+# 字节跳动 CDN
+*.zjcdn.com = server:180.184.1.1
+
+# > BiliBili
+*.bilibili.com = server:https://223.5.5.5/dns-query
+# BiliBili API
+*.biliapi.com = server:https://223.5.5.5/dns-query
+*.biliapi.net = server:https://223.5.5.5/dns-query
+# BiliBili CDN
+*.bilicdn?.com = server:https://223.5.5.5/dns-query
+# BiliBili 静态资源
+*.hdslb.com = server:https://223.5.5.5/dns-query
+*.hdslb.net = server:https://223.5.5.5/dns-query
+# BiliBili 视频
+*.bilivideo.com = server:https://223.5.5.5/dns-query
+*.bilivideo.cn = server:https://223.5.5.5/dns-query
+# BiliBili短网址
+acg.tv = server:https://223.5.5.5/dns-query
+
+# > 京东
+*.jd.com = server:https://doh.pub/dns-query
+# 京东 静态资源
+*.360buyimg.com = server:https://doh.pub/dns-query
+# 京东云
+*.jdcloud.com = server:https://doh.pub/dns-query
+# 京东云 缓存和存储
+*.jcloudstatic.com = server:https://doh.pub/dns-query
+# 京东云 静态资源
+*.jcloudstatic.net = server:https://doh.pub/dns-query
+# 京东云 全局负载均衡
+*.jdgslb.com = server:https://doh.pub/dns-query
+# 京东短网址
+3.cn = server:https://doh.pub/dns-query
+
+# > 🇨🇳 CHN
+# CNNIC SDNS
+# 中国政府网
+*.gov.cn = server:1.2.4.8
+*.政务 = server:1.2.4.8
+
+# > 🇭🇰 HKG
+# PCCW Enterprises Limited
+*.pccw.com = server:dns1.pccw.com
+# 1O1O
+*.1010.com.hk = server:dns1.pccw.com
+# csl.
+*.hkcsl.com = server:dns1.pccw.com
+# The CLUB by HKT
+*.theclub.com.hk = server:dns1.pccw.com
+# now.com
+*.now.com = server:dns2.pccw.com
+# Now E
+*.nowe.com = server:dns2.pccw.com
+# Now TV
+*.now-tv.com = server:dns2.pccw.com
+# MOOV
+*.moov.hk = server:dns3.pccw.com
+# viu
+*.viu.com = server:dns3.pccw.com
+# viu tv
+*.viu.tv = server:dns3.pccw.com
+# Hong Kong Cable Television Limited
+*.hkcable.com.hk = server:dns1.hkcable.com.hk
+# i-CABLE
+*.i-cable.com = server:dns2.hkcable.com.hk
+# CABLE TV Service
+*.cabletv.com.hk = server:dns2.hkcable.com.hk
+# KDDI Hong Kong Limited
+*.hk.kddi.com = server:apple.kdd.net.hk
+
+# > ⛰ TWN
+# 中华电信
+*.cht.com.tw = server:https://dns.hinet.net/dns-query
+# 中华电信HiNet
+*.hinet.net = server:https://dns.hinet.net/dns-query
+# 中华电信emome
+*.emome.net = server:https://dns.hinet.net/dns-query
+# Taiwan Network Information Center
+*.tw = server:https://dns.twnic.tw/dns-query
+*.taipei = server:https://dns.twnic.tw/dns-query
+
+# > system DNS
+_hotspot_.m2m = server:system
+*._hotspot_.m2m = server:system
+hotspot.cslwifi.com = server:system
+*.hotspot.cslwifi.com = server:system
+amplifi.lan = server:system
+*.amplifi.lan = server:system
+*.lan = server:system
+*.*.lan = server:system
+home.arpa = server:system
+*.home.arpa = server:system
+ts.net = server:system
+*.ts.net = server:system
+instant.arubanetworks.com = server:system
+*.instant.arubanetworks.com = server:system
+setmeup.arubanetworks.com = server:system
+*.setmeup.arubanetworks.com = server:system
+router.asus.com = server:system
+*.router.asus.com = server:system
+repeater.asus.com = server:system
+*.repeater.asus.com = server:system
+asusrouter.com = server:system
+*.asusrouter.com = server:system
+routerlogin.net = server:system
+*.routerlogin.net = server:system
+tendawifi.com = server:system
+*.tendawifi.com = server:system
+tplinkwifi.net = server:system
+*.tplinkwifi.net = server:system
+tplogin.cn = server:system
+*.tplogin.cn = server:system
+tplinkap.net = server:system
+*.tplinkap.net = server:system
+tplinkeap.net = server:system
+*.tplinkeap.net = server:system
+tplinkmodem.net = server:system
+*.tplinkmodem.net = server:system
+tplinkplclogin.net = server:system
+*.tplinkplclogin.net = server:system
+tplinkrepeater.net = server:system
+*.tplinkrepeater.net = server:system
+miwifi.com = server:system
+*.miwifi.com = server:system
+zte.home = server:system
+*.zte.home = server:system
+ui.direct = server:system
+*.ui.direct = server:system
+hiwifi.com = server:system
+*.hiwifi.com = server:system
+huaweimobilewifi.com = server:system
+*.huaweimobilewifi.com = server:system
+my.router = server:system
+*.my.router = server:system
+phicomm.me = server:system
+*.phicomm.me = server:system
+router.ctc = server:system
+*.router.ctc = server:system
+peiluyou.com = server:system
+*.peiluyou.com = server:system
+airbox.home = server:system
+*.airbox.home = server:system
+arcor.easybox = server:system
+*.arcor.easybox = server:system
+aterm.me = server:system
+*.aterm.me = server:system
+bthub.home = server:system
+*.bthub.home = server:system
+bthomehub.home = server:system
+*.bthomehub.home = server:system
+congstar.box = server:system
+*.congstar.box = server:system
+connect.box = server:system
+*.connect.box = server:system
+console.gl-inet.com = server:system
+*.console.gl-inet.com = server:system
+easy.box = server:system
+*.easy.box = server:system
+etxr = server:system
+*.etxr = server:system
+fritz.box = server:system
+*.fritz.box = server:system
+fritz.nas = server:system
+*.fritz.nas = server:system
+fritz.repeater = server:system
+*.fritz.repeater = server:system
+giga.cube = server:system
+*.giga.cube = server:system
+hi.link = server:system
+*.hi.link = server:system
+hitronhub.home = server:system
+*.hitronhub.home = server:system
+homerouter.cpe = server:system
+*.homerouter.cpe = server:system
+myfritz.box = server:system
+*.myfritz.box = server:system
+mobile.hotspot = server:system
+*.mobile.hotspot = server:system
+ntt.setup = server:system
+*.ntt.setup = server:system
+pi.hole = server:system
+*.pi.hole = server:system
+plex.direct = server:system
+*.plex.direct = server:system
+app.plex.tv = server:system
+*.app.plex.tv = server:system
+routerlogin.com = server:system
+*.routerlogin.com = server:system
+samsung.router = server:system
+*.samsung.router = server:system
+speedport.ip = server:system
+*.speedport.ip = server:system
+steamloopback.host = server:system
+*.steamloopback.host = server:system
+web.setup = server:system
+*.web.setup = server:system
+web.setup.home = server:system
+*.web.setup.home = server:system
+10.in-addr.arpa = server:system
+*.10.in-addr.arpa = server:system
+16.172.in-addr.arpa = server:system
+*.16.172.in-addr.arpa = server:system
+17.172.in-addr.arpa = server:system
+*.17.172.in-addr.arpa = server:system
+18.172.in-addr.arpa = server:system
+*.18.172.in-addr.arpa = server:system
+19.172.in-addr.arpa = server:system
+*.19.172.in-addr.arpa = server:system
+20.172.in-addr.arpa = server:system
+*.20.172.in-addr.arpa = server:system
+21.172.in-addr.arpa = server:system
+*.21.172.in-addr.arpa = server:system
+22.172.in-addr.arpa = server:system
+*.22.172.in-addr.arpa = server:system
+23.172.in-addr.arpa = server:system
+*.23.172.in-addr.arpa = server:system
+24.172.in-addr.arpa = server:system
+*.24.172.in-addr.arpa = server:system
+25.172.in-addr.arpa = server:system
+*.25.172.in-addr.arpa = server:system
+26.172.in-addr.arpa = server:system
+*.26.172.in-addr.arpa = server:system
+27.172.in-addr.arpa = server:system
+*.27.172.in-addr.arpa = server:system
+28.172.in-addr.arpa = server:system
+*.28.172.in-addr.arpa = server:system
+29.172.in-addr.arpa = server:system
+*.29.172.in-addr.arpa = server:system
+30.172.in-addr.arpa = server:system
+*.30.172.in-addr.arpa = server:system
+31.172.in-addr.arpa = server:system
+*.31.172.in-addr.arpa = server:system
+168.192.in-addr.arpa = server:system
+*.168.192.in-addr.arpa = server:system
+254.169.in-addr.arpa = server:system
+*.254.169.in-addr.arpa = server:system

@@ -1,0 +1,10 @@
+#!name=Emby Premiere
+#!desc=🔓Emby Premiere解锁
+#!icon=https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Color/EMBY.png
+#!author=B3TT3R
+
+[MITM]
+hostname = mb3admin.com
+
+[Script]
+http-response ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice script-path=https://gitlab.com/iptv-org/embypublic/-/raw/master/Script/EmbyPremiere.js,timeout=10,requires-body = true, tag=Emby Premiere
