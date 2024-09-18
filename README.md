@@ -2,8 +2,8 @@
 
 ### 机器性能测试
 ```
-单线程测试
-bash <(curl -Lso- https://bench.im/hyperspeed)
+融合怪
+curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
 ```
 ```
 Bench.sh
@@ -17,6 +17,8 @@ curl -sL yabs.sh | bash -s -- -ig
 ```
 bash <(curl -Ls http://IP.Check.Place)
 ```
+![image](https://github.com/user-attachments/assets/85f801c0-ca06-40e4-aeb5-47a97ff4c216)
+
 ### 网络测试
 ```
 BestTrace
