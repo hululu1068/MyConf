@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 #!author=B3TT3R
 #!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
-#!update = 2024-08-15
+#!update = 2024-11-28
 
 [Host]
 # --- CUSTOM DNS ---
@@ -29,27 +29,66 @@ router.asus.com = server:system
 www.miwifi.com = server:system
 miwifi.com = server:system
 
+# GitHub
+atom.io = server:https://101.101.101.101/dns-query
+dependabot.com = server:https://101.101.101.101/dns-query
+ghcr.io = server:https://101.101.101.101/dns-query
+git.io = server:https://101.101.101.101/dns-query
+github.blog = server:https://101.101.101.101/dns-query
+github.com = server:https://101.101.101.101/dns-query
+github.community = server:https://101.101.101.101/dns-query
+github.dev = server:https://101.101.101.101/dns-query
+github.io = server:https://101.101.101.101/dns-query
+githubapp.com = server:https://101.101.101.101/dns-query
+githubassets.com = server:https://101.101.101.101/dns-query
+githubcopilot.com = server:https://101.101.101.101/dns-query
+githubhackathon.com = server:https://101.101.101.101/dns-query
+githubnext.com = server:https://101.101.101.101/dns-query
+githubpreview.dev = server:https://101.101.101.101/dns-query
+githubstatus.com = server:https://101.101.101.101/dns-query
+githubuniverse.com = server:https://101.101.101.101/dns-query
+githubusercontent.com = server:https://101.101.101.101/dns-query
+myoctocat.com = server:https://101.101.101.101/dns-query
+opensource.guide = server:https://101.101.101.101/dns-query
+repo.new = server:https://101.101.101.101/dns-query
+thegithubshop.com = server:https://101.101.101.101/dns-query
+# GitHub Actions Artifacts
+blob.core.windows.net = server:https://101.101.101.101/dns-query
+github-cloud.s3.amazonaws.com = server:https://101.101.101.101/dns-query
+# npmjs
+npm.community = server:https://1.12.12.12/dns-query
+npmjs.com = server:https://1.12.12.12/dns-query
+npmjs.org = server:https://1.12.12.12/dns-query
+
 # > Apple
 # refer: https://support.apple.com/zh-cn/HT210060
 networking.apple = server:https://doh.dns.apple.com/dns-query
+www-cdn.icloud.com.akadns.net = server:https://doh.dns.apple.com/dns-query
 # Apple.com
 *.apple.com = server:119.29.29.29
 # iCloud.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query
+apple-icloud.cn = server:https://1.12.12.12/dns-query
+appleicloud.cn = server:https://1.12.12.12/dns-query
+icloud-apple.cn = server:https://1.12.12.12/dns-query
+icloud.com.cn = server:https://1.12.12.12/dns-query
+icloud.net.cn = server:https://1.12.12.12/dns-query
+icloudapple.cn = server:https://1.12.12.12/dns-query
+me.com = server:https://1.12.12.12/dns-query
 # Apple-CN
 netcts.cdn-apple.com = server:https://doh.pub/dns-query
 apple-mapkit.com = server:119.29.29.29
 
 # Google CDN
-blog.google = server:8.8.8.8
-googletraveladservices.com = server:8.8.8.8
-dl.google.com = server:8.8.8.8
-dl.l.google.com = server:8.8.8.8
-clientservices.googleapis.com = server:8.8.8.8
-update.googleapis.com = server:8.8.8.8
-translate.googleapis.com = server:8.8.8.8
-fonts.googleapis.com = server:8.8.8.8
-fonts.gstatic.com = server:8.8.8.8
+blog.google = server:https://101.101.101.101/dns-query
+googletraveladservices.com = server:https://101.101.101.101/dns-query
+dl.google.com = server:https://101.101.101.101/dns-query
+dl.l.google.com = server:https://101.101.101.101/dns-query
+clientservices.googleapis.com = server:https://101.101.101.101/dns-query
+update.googleapis.com = server:https://101.101.101.101/dns-query
+translate.googleapis.com = server:https://101.101.101.101/dns-query
+fonts.googleapis.com = server:https://101.101.101.101/dns-query
+fonts.gstatic.com = server:https://101.101.101.101/dns-query
 
 # Google STUN
 stun.l.google.com = server:https://doh.pub/dns-query
@@ -57,66 +96,66 @@ stun?.l.google.com = server:https://doh.pub/dns-query
 
 # > Alphabet
 # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
-# *.google = server:https://dns.google/dns-query
-*.google.com = server:https://dns.google/dns-query
-*.google.com.?? = server:https://dns.google/dns-query
+# *.google = server:https://101.101.101.101/dns-query
+*.google.com = server:https://101.101.101.101/dns-query
+*.google.com.?? = server:https://101.101.101.101/dns-query
 # Google sites
-# *.goog = server:https://dns.google/dns-query
+# *.goog = server:https://101.101.101.101/dns-query
 # Google 静态资源
-*.gstatic.com = server:https://dns.google/dns-query
+*.gstatic.com = server:https://101.101.101.101/dns-query
 # Google Photos
-*.ggpht.com = server:https://dns.google/dns-query
+*.ggpht.com = server:https://101.101.101.101/dns-query
 # Google 用户上传数据
-*.googleusercontent.com = server:https://dns.google/dns-query
+*.googleusercontent.com = server:https://101.101.101.101/dns-query
 # Google APIs
-*.googleapis.com = server:https://dns.google/dns-query
+*.googleapis.com = server:https://101.101.101.101/dns-query
 # Google backbone
-*.1e100.net = server:https://dns.google/dns-query
+*.1e100.net = server:https://101.101.101.101/dns-query
 # Youtube sites
-*.youtube = server:https://dns.google/dns-query
+*.youtube = server:https://101.101.101.101/dns-query
 # Youtube
-*.youtube.com = server:https://dns.google/dns-query
+*.youtube.com = server:https://101.101.101.101/dns-query
 # Youtube 图片
-*.ytimg.com = server:https://dns.google/dns-query
+*.ytimg.com = server:https://101.101.101.101/dns-query
 # Youtube Video
-*.googlevideo.com = server:https://dns.google/dns-query
+*.googlevideo.com = server:https://101.101.101.101/dns-query
 # Google Video Thumbnails
-*.gvt?.com = server:https://dns.google/dns-query
+*.gvt?.com = server:https://101.101.101.101/dns-query
 # reCaptcha
-*.recaptcha.net = server:https://dns.google/dns-query
+*.recaptcha.net = server:https://101.101.101.101/dns-query
 # Gmail
-*.gmail.com = server:https://dns.google/dns-query
+*.gmail.com = server:https://101.101.101.101/dns-query
 # Google Source
-*.googlesource.com = server:https://dns.google/dns-query
+*.googlesource.com = server:https://101.101.101.101/dns-query
 # Google AD Services
 *.googleadservices.com = server:https://dns.adguard-dns.com/dns-query
 # DoubleClick
-*.doubleclick.net = server:https://dns.google/dns-query
+*.doubleclick.net = server:https://101.101.101.101/dns-query
 # AdSense
-*.adsense.com = server:https://dns.adguard-dns.com/dns-query
+*.adsense.com = server:https://1.1.1.1/dns-query
 # AdSense Custom Search Ads
-*.adsensecustomsearchads.com = server:https://dns.adguard-dns.com/dns-query
+*.adsensecustomsearchads.com = server:https://1.1.1.1/dns-query
 # AdSense for mobile apps
-*.adsenseformobileapps.com = server:https://dns.adguard-dns.com/dns-query
+*.adsenseformobileapps.com = server:https://1.1.1.1/dns-query
 # Google shortened URLs
-*.gle = server:https://dns.google/dns-query
+*.gle = server:https://101.101.101.101/dns-query
 # Google URL Shortener
-goo.gl = server:https://dns.google/dns-query
+goo.gl = server:https://101.101.101.101/dns-query
 
 # Twitter / X
-twitter.com = server:https://dns.google/dns-query
-t.co = server:https://dns.google/dns-query
-twimg.com = server:https://dns.google/dns-query
-x.com = server:https://dns.google/dns-query
-pscp.tv = server:https://dns.google/dns-query
+twitter.com = server:https://101.101.101.101/dns-query
+t.co = server:https://101.101.101.101/dns-query
+twimg.com = server:https://101.101.101.101/dns-query
+x.com = server:https://101.101.101.101/dns-query
+pscp.tv = server:https://101.101.101.101/dns-query
 
 # Telegram
-graph.org = server:https://dns.google/dns-query
-t.me = server:https://dns.google/dns-query
-telegram.me = server:https://dns.google/dns-query
-telegram.org = server:https://dns.google/dns-query
-tg.dev = server:https://dns.google/dns-query
-tx.me = server:https://dns.google/dns-query
+graph.org = server:https://101.101.101.101/dns-query
+t.me = server:https://101.101.101.101/dns-query
+telegram.me = server:https://101.101.101.101/dns-query
+telegram.org = server:https://101.101.101.101/dns-query
+tg.dev = server:https://101.101.101.101/dns-query
+tx.me = server:https://101.101.101.101/dns-query
 
 # > Cloudflare
 # refer: https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/
@@ -415,199 +454,41 @@ acg.tv = server:https://223.5.5.5/dns-query
 *.gov.cn = server:1.2.4.8
 *.政务 = server:1.2.4.8
 
-# > 🇭🇰 HKG
-# PCCW Enterprises Limited
-*.pccw.com = server:dns1.pccw.com
-# 1O1O
-*.1010.com.hk = server:dns1.pccw.com
-# csl.
-*.hkcsl.com = server:dns1.pccw.com
-# The CLUB by HKT
-*.theclub.com.hk = server:dns1.pccw.com
-# now.com
-*.now.com = server:dns2.pccw.com
-# Now E
-*.nowe.com = server:dns2.pccw.com
-# Now TV
-*.now-tv.com = server:dns2.pccw.com
-# MOOV
-*.moov.hk = server:dns3.pccw.com
-# viu
-*.viu.com = server:dns3.pccw.com
-# viu tv
-*.viu.tv = server:dns3.pccw.com
-# Hong Kong Cable Television Limited
-*.hkcable.com.hk = server:dns1.hkcable.com.hk
-# i-CABLE
-*.i-cable.com = server:dns2.hkcable.com.hk
-# CABLE TV Service
-*.cabletv.com.hk = server:dns2.hkcable.com.hk
-# KDDI Hong Kong Limited
-*.hk.kddi.com = server:apple.kdd.net.hk
-
-# > ⛰ TWN
-# 中华电信
-*.cht.com.tw = server:https://dns.hinet.net/dns-query
-# 中华电信HiNet
-*.hinet.net = server:https://dns.hinet.net/dns-query
-# 中华电信emome
-*.emome.net = server:https://dns.hinet.net/dns-query
-# Taiwan Network Information Center
-*.tw = server:https://dns.twnic.tw/dns-query
-*.taipei = server:https://dns.twnic.tw/dns-query
-
-# > system DNS
-_hotspot_.m2m = server:system
-*._hotspot_.m2m = server:system
-hotspot.cslwifi.com = server:system
-*.hotspot.cslwifi.com = server:system
-amplifi.lan = server:system
-*.amplifi.lan = server:system
+# > Router/system DNS
 *.lan = server:system
-*.*.lan = server:system
-home.arpa = server:system
 *.home.arpa = server:system
-ts.net = server:system
 *.ts.net = server:system
-instant.arubanetworks.com = server:system
 *.instant.arubanetworks.com = server:system
-setmeup.arubanetworks.com = server:system
 *.setmeup.arubanetworks.com = server:system
-router.asus.com = server:system
 *.router.asus.com = server:system
-repeater.asus.com = server:system
 *.repeater.asus.com = server:system
-asusrouter.com = server:system
 *.asusrouter.com = server:system
-routerlogin.net = server:system
 *.routerlogin.net = server:system
-tendawifi.com = server:system
 *.tendawifi.com = server:system
-tplinkwifi.net = server:system
 *.tplinkwifi.net = server:system
-tplogin.cn = server:system
 *.tplogin.cn = server:system
-tplinkap.net = server:system
 *.tplinkap.net = server:system
-tplinkeap.net = server:system
 *.tplinkeap.net = server:system
-tplinkmodem.net = server:system
 *.tplinkmodem.net = server:system
-tplinkplclogin.net = server:system
 *.tplinkplclogin.net = server:system
-tplinkrepeater.net = server:system
 *.tplinkrepeater.net = server:system
-miwifi.com = server:system
 *.miwifi.com = server:system
-zte.home = server:system
 *.zte.home = server:system
-ui.direct = server:system
 *.ui.direct = server:system
-hiwifi.com = server:system
 *.hiwifi.com = server:system
-huaweimobilewifi.com = server:system
 *.huaweimobilewifi.com = server:system
-my.router = server:system
 *.my.router = server:system
-phicomm.me = server:system
 *.phicomm.me = server:system
-router.ctc = server:system
 *.router.ctc = server:system
-peiluyou.com = server:system
 *.peiluyou.com = server:system
-airbox.home = server:system
 *.airbox.home = server:system
-arcor.easybox = server:system
-*.arcor.easybox = server:system
-aterm.me = server:system
-*.aterm.me = server:system
-bthub.home = server:system
-*.bthub.home = server:system
-bthomehub.home = server:system
-*.bthomehub.home = server:system
-congstar.box = server:system
-*.congstar.box = server:system
-connect.box = server:system
-*.connect.box = server:system
-console.gl-inet.com = server:system
-*.console.gl-inet.com = server:system
-easy.box = server:system
-*.easy.box = server:system
-etxr = server:system
-*.etxr = server:system
-fritz.box = server:system
-*.fritz.box = server:system
-fritz.nas = server:system
-*.fritz.nas = server:system
-fritz.repeater = server:system
-*.fritz.repeater = server:system
-giga.cube = server:system
-*.giga.cube = server:system
-hi.link = server:system
-*.hi.link = server:system
-hitronhub.home = server:system
-*.hitronhub.home = server:system
-homerouter.cpe = server:system
 *.homerouter.cpe = server:system
-myfritz.box = server:system
-*.myfritz.box = server:system
-mobile.hotspot = server:system
-*.mobile.hotspot = server:system
-ntt.setup = server:system
 *.ntt.setup = server:system
-pi.hole = server:system
 *.pi.hole = server:system
-plex.direct = server:system
 *.plex.direct = server:system
-app.plex.tv = server:system
 *.app.plex.tv = server:system
-routerlogin.com = server:system
 *.routerlogin.com = server:system
-samsung.router = server:system
 *.samsung.router = server:system
-speedport.ip = server:system
-*.speedport.ip = server:system
-steamloopback.host = server:system
-*.steamloopback.host = server:system
-web.setup = server:system
 *.web.setup = server:system
-web.setup.home = server:system
 *.web.setup.home = server:system
-10.in-addr.arpa = server:system
-*.10.in-addr.arpa = server:system
-16.172.in-addr.arpa = server:system
-*.16.172.in-addr.arpa = server:system
-17.172.in-addr.arpa = server:system
-*.17.172.in-addr.arpa = server:system
-18.172.in-addr.arpa = server:system
-*.18.172.in-addr.arpa = server:system
-19.172.in-addr.arpa = server:system
-*.19.172.in-addr.arpa = server:system
-20.172.in-addr.arpa = server:system
-*.20.172.in-addr.arpa = server:system
-21.172.in-addr.arpa = server:system
-*.21.172.in-addr.arpa = server:system
-22.172.in-addr.arpa = server:system
-*.22.172.in-addr.arpa = server:system
-23.172.in-addr.arpa = server:system
-*.23.172.in-addr.arpa = server:system
-24.172.in-addr.arpa = server:system
-*.24.172.in-addr.arpa = server:system
-25.172.in-addr.arpa = server:system
-*.25.172.in-addr.arpa = server:system
-26.172.in-addr.arpa = server:system
-*.26.172.in-addr.arpa = server:system
-27.172.in-addr.arpa = server:system
-*.27.172.in-addr.arpa = server:system
-28.172.in-addr.arpa = server:system
-*.28.172.in-addr.arpa = server:system
-29.172.in-addr.arpa = server:system
-*.29.172.in-addr.arpa = server:system
-30.172.in-addr.arpa = server:system
-*.30.172.in-addr.arpa = server:system
-31.172.in-addr.arpa = server:system
-*.31.172.in-addr.arpa = server:system
-168.192.in-addr.arpa = server:system
-*.168.192.in-addr.arpa = server:system
-254.169.in-addr.arpa = server:system
-*.254.169.in-addr.arpa = server:system
+*.in-addr.arpa = server:system
