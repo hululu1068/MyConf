@@ -22,77 +22,77 @@ dns.twnic.tw = 101.101.101.101
 ordns.he.net = 74.82.42.42
 
 # Synology Router
-router.synology.com = server:system
+*router.synology.com = server:system
 # Asus Router
-router.asus.com = server:system
+*router.asus.com = server:system
 # 小米 Mi WiFi Router
-www.miwifi.com = server:system
-miwifi.com = server:system
+*www.miwifi.com = server:system
+*miwifi.com = server:system
 
 # GitHub
-atom.io = server:https://101.101.101.101/dns-query
-dependabot.com = server:https://101.101.101.101/dns-query
-ghcr.io = server:https://101.101.101.101/dns-query
-git.io = server:https://101.101.101.101/dns-query
-github.blog = server:https://101.101.101.101/dns-query
-github.com = server:https://101.101.101.101/dns-query
-github.community = server:https://101.101.101.101/dns-query
-github.dev = server:https://101.101.101.101/dns-query
-github.io = server:https://101.101.101.101/dns-query
-githubapp.com = server:https://101.101.101.101/dns-query
-githubassets.com = server:https://101.101.101.101/dns-query
-githubcopilot.com = server:https://101.101.101.101/dns-query
-githubhackathon.com = server:https://101.101.101.101/dns-query
-githubnext.com = server:https://101.101.101.101/dns-query
-githubpreview.dev = server:https://101.101.101.101/dns-query
-githubstatus.com = server:https://101.101.101.101/dns-query
-githubuniverse.com = server:https://101.101.101.101/dns-query
-githubusercontent.com = server:https://101.101.101.101/dns-query
-myoctocat.com = server:https://101.101.101.101/dns-query
-opensource.guide = server:https://101.101.101.101/dns-query
-repo.new = server:https://101.101.101.101/dns-query
-thegithubshop.com = server:https://101.101.101.101/dns-query
+*atom.io = server:https://101.101.101.101/dns-query
+*dependabot.com = server:https://101.101.101.101/dns-query
+*ghcr.io = server:https://101.101.101.101/dns-query
+*git.io = server:https://101.101.101.101/dns-query
+*github.blog = server:https://101.101.101.101/dns-query
+*github.com = server:https://101.101.101.101/dns-query
+*github.community = server:https://101.101.101.101/dns-query
+*github.dev = server:https://101.101.101.101/dns-query
+*github.io = server:https://101.101.101.101/dns-query
+*githubapp.com = server:https://101.101.101.101/dns-query
+*githubassets.com = server:https://101.101.101.101/dns-query
+*githubcopilot.com = server:https://101.101.101.101/dns-query
+*githubhackathon.com = server:https://101.101.101.101/dns-query
+*githubnext.com = server:https://101.101.101.101/dns-query
+*githubpreview.dev = server:https://101.101.101.101/dns-query
+*githubstatus.com = server:https://101.101.101.101/dns-query
+*githubuniverse.com = server:https://101.101.101.101/dns-query
+*githubusercontent.com = server:https://101.101.101.101/dns-query
+*myoctocat.com = server:https://101.101.101.101/dns-query
+*opensource.guide = server:https://101.101.101.101/dns-query
+*repo.new = server:https://101.101.101.101/dns-query
+*thegithubshop.com = server:https://101.101.101.101/dns-query
 # GitHub Actions Artifacts
-blob.core.windows.net = server:https://101.101.101.101/dns-query
-github-cloud.s3.amazonaws.com = server:https://101.101.101.101/dns-query
+*blob.core.windows.net = server:https://101.101.101.101/dns-query
+*github-cloud.s3.amazonaws.com = server:https://101.101.101.101/dns-query
 # npmjs
-npm.community = server:https://1.12.12.12/dns-query
-npmjs.com = server:https://1.12.12.12/dns-query
-npmjs.org = server:https://1.12.12.12/dns-query
+*npm.community = server:https://1.12.12.12/dns-query
+*npmjs.com = server:https://1.12.12.12/dns-query
+*npmjs.org = server:https://1.12.12.12/dns-query
 
 # > Apple
 # refer: https://support.apple.com/zh-cn/HT210060
-networking.apple = server:https://doh.dns.apple.com/dns-query
-www-cdn.icloud.com.akadns.net = server:https://doh.dns.apple.com/dns-query
+*networking.apple = server:https://doh.dns.apple.com/dns-query
+*www-cdn.icloud.com.akadns.net = server:https://doh.dns.apple.com/dns-query
 # Apple.com
 *.apple.com = server:119.29.29.29
 # iCloud.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query
-apple-icloud.cn = server:https://1.12.12.12/dns-query
-appleicloud.cn = server:https://1.12.12.12/dns-query
-icloud-apple.cn = server:https://1.12.12.12/dns-query
-icloud.com.cn = server:https://1.12.12.12/dns-query
-icloud.net.cn = server:https://1.12.12.12/dns-query
-icloudapple.cn = server:https://1.12.12.12/dns-query
-me.com = server:https://1.12.12.12/dns-query
+*apple-icloud.cn = server:https://1.12.12.12/dns-query
+*appleicloud.cn = server:https://1.12.12.12/dns-query
+*icloud-apple.cn = server:https://1.12.12.12/dns-query
+*icloud.com.cn = server:https://1.12.12.12/dns-query
+*icloud.net.cn = server:https://1.12.12.12/dns-query
+*icloudapple.cn = server:https://1.12.12.12/dns-query
+*me.com = server:https://1.12.12.12/dns-query
 # Apple-CN
-netcts.cdn-apple.com = server:https://doh.pub/dns-query
-apple-mapkit.com = server:119.29.29.29
+*netcts.cdn-apple.com = server:https://doh.pub/dns-query
+*apple-mapkit.com = server:119.29.29.29
 
 # Google CDN
-blog.google = server:https://101.101.101.101/dns-query
-googletraveladservices.com = server:https://101.101.101.101/dns-query
-dl.google.com = server:https://101.101.101.101/dns-query
-dl.l.google.com = server:https://101.101.101.101/dns-query
-clientservices.googleapis.com = server:https://101.101.101.101/dns-query
-update.googleapis.com = server:https://101.101.101.101/dns-query
-translate.googleapis.com = server:https://101.101.101.101/dns-query
-fonts.googleapis.com = server:https://101.101.101.101/dns-query
-fonts.gstatic.com = server:https://101.101.101.101/dns-query
+*blog.google = server:https://101.101.101.101/dns-query
+*googletraveladservices.com = server:https://101.101.101.101/dns-query
+*dl.google.com = server:https://101.101.101.101/dns-query
+*dl.l.google.com = server:https://101.101.101.101/dns-query
+*clientservices.googleapis.com = server:https://101.101.101.101/dns-query
+*update.googleapis.com = server:https://101.101.101.101/dns-query
+*translate.googleapis.com = server:https://101.101.101.101/dns-query
+*fonts.googleapis.com = server:https://101.101.101.101/dns-query
+*fonts.gstatic.com = server:https://101.101.101.101/dns-query
 
 # Google STUN
-stun.l.google.com = server:https://doh.pub/dns-query
-stun?.l.google.com = server:https://doh.pub/dns-query
+*stun.l.google.com = server:https://doh.pub/dns-query
+*stun?.l.google.com = server:https://doh.pub/dns-query
 
 # > Alphabet
 # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
@@ -143,19 +143,19 @@ stun?.l.google.com = server:https://doh.pub/dns-query
 goo.gl = server:https://101.101.101.101/dns-query
 
 # Twitter / X
-twitter.com = server:https://101.101.101.101/dns-query
-t.co = server:https://101.101.101.101/dns-query
-twimg.com = server:https://101.101.101.101/dns-query
-x.com = server:https://101.101.101.101/dns-query
-pscp.tv = server:https://101.101.101.101/dns-query
+*twitter.com = server:https://101.101.101.101/dns-query
+*t.co = server:https://101.101.101.101/dns-query
+*twimg.com = server:https://101.101.101.101/dns-query
+*x.com = server:https://101.101.101.101/dns-query
+*pscp.tv = server:https://101.101.101.101/dns-query
 
 # Telegram
-graph.org = server:https://101.101.101.101/dns-query
-t.me = server:https://101.101.101.101/dns-query
-telegram.me = server:https://101.101.101.101/dns-query
-telegram.org = server:https://101.101.101.101/dns-query
-tg.dev = server:https://101.101.101.101/dns-query
-tx.me = server:https://101.101.101.101/dns-query
+*graph.org = server:https://101.101.101.101/dns-query
+*t.me = server:https://101.101.101.101/dns-query
+*telegram.me = server:https://101.101.101.101/dns-query
+*telegram.org = server:https://101.101.101.101/dns-query
+*tg.dev = server:https://101.101.101.101/dns-query
+*tx.me = server:https://101.101.101.101/dns-query
 
 # > Cloudflare
 # refer: https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/
