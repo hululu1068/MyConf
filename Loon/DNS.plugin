@@ -1,9 +1,9 @@
-#!name=🌏DNS映射
-#!desc=1.特定域名使用指定DNS进行解析 2.特殊地址使用规范DNS进行解析
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
-#!author=B3TT3R
-#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
-#!update = 2024-11-28
+#!name = 💯DNS映射
+#!desc = 1.特定域名使用指定DNS进行解析 2.特殊地址使用规范DNS进行解析
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+#!author = B3TT3R
+#!homepage = https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
+#!update = 2025-03-20
 
 [Host]
 # --- CUSTOM DNS ---
@@ -12,125 +12,125 @@ dns.google = 8.8.8.8
 dns64.dns.google = 2001:4860:4860::6464
 cloudflare-dns.com = 104.16.249.249
 1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1
-one.one.one.one = 1.1.1.1
+one.one.one.one = 1.0.0.1
 dns.alidns.com = 223.5.5.5
 doh.pub = 1.12.12.12
-dot.pub = 1.12.12.12
+dot.pub = 120.53.53.53
 doh.360.cn = 23.6.48.18
 dot.360.cn = 101.198.198.198
-dns.twnic.tw = 101.101.101.101
+dns.twnic.tw = 101.102.103.104
 ordns.he.net = 74.82.42.42
 
 # Synology Router
-*router.synology.com = server:system
+*.router.synology.com = server:system
 # Asus Router
-*router.asus.com = server:system
+*.router.asus.com = server:system
 # 小米 Mi WiFi Router
-*www.miwifi.com = server:system
-*miwifi.com = server:system
+*.www.miwifi.com = server:system
+*.miwifi.com = server:system
 
 # GitHub
-*atom.io = server:https://101.101.101.101/dns-query
-*dependabot.com = server:https://101.101.101.101/dns-query
-*ghcr.io = server:https://101.101.101.101/dns-query
-*git.io = server:https://101.101.101.101/dns-query
-*github.blog = server:https://101.101.101.101/dns-query
-*github.com = server:https://101.101.101.101/dns-query
-*github.community = server:https://101.101.101.101/dns-query
-*github.dev = server:https://101.101.101.101/dns-query
-*github.io = server:https://101.101.101.101/dns-query
-*githubapp.com = server:https://101.101.101.101/dns-query
-*githubassets.com = server:https://101.101.101.101/dns-query
-*githubcopilot.com = server:https://101.101.101.101/dns-query
-*githubhackathon.com = server:https://101.101.101.101/dns-query
-*githubnext.com = server:https://101.101.101.101/dns-query
-*githubpreview.dev = server:https://101.101.101.101/dns-query
-*githubstatus.com = server:https://101.101.101.101/dns-query
-*githubuniverse.com = server:https://101.101.101.101/dns-query
-*githubusercontent.com = server:https://101.101.101.101/dns-query
-*myoctocat.com = server:https://101.101.101.101/dns-query
-*opensource.guide = server:https://101.101.101.101/dns-query
-*repo.new = server:https://101.101.101.101/dns-query
-*thegithubshop.com = server:https://101.101.101.101/dns-query
+*.atom.io = server:https://101.102.103.104/dns-query
+*.dependabot.com = server:https://101.102.103.104/dns-query
+*.ghcr.io = server:https://101.102.103.104/dns-query
+*.git.io = server:https://101.102.103.104/dns-query
+*.github.blog = server:https://101.102.103.104/dns-query
+*.github.com = server:https://101.102.103.104/dns-query
+*.github.community = server:https://101.102.103.104/dns-query
+*.github.dev = server:https://101.102.103.104/dns-query
+*.github.io = server:https://101.102.103.104/dns-query
+*.githubapp.com = server:https://101.102.103.104/dns-query
+*.githubassets.com = server:https://101.102.103.104/dns-query
+*.githubcopilot.com = server:https://101.102.103.104/dns-query
+*.githubhackathon.com = server:https://101.102.103.104/dns-query
+*.githubnext.com = server:https://101.102.103.104/dns-query
+*.githubpreview.dev = server:https://101.102.103.104/dns-query
+*.githubstatus.com = server:https://101.102.103.104/dns-query
+*.githubuniverse.com = server:https://101.102.103.104/dns-query
+*.githubusercontent.com = server:https://101.102.103.104/dns-query
+*.myoctocat.com = server:https://101.102.103.104/dns-query
+*.opensource.guide = server:https://101.102.103.104/dns-query
+*.repo.new = server:https://101.102.103.104/dns-query
+*.thegithubshop.com = server:https://101.102.103.104/dns-query
 # GitHub Actions Artifacts
-*blob.core.windows.net = server:https://101.101.101.101/dns-query
-*github-cloud.s3.amazonaws.com = server:https://101.101.101.101/dns-query
+*.blob.core.windows.net = server:https://101.102.103.104/dns-query
+*.github-cloud.s3.amazonaws.com = server:https://101.102.103.104/dns-query
 # npmjs
-*npm.community = server:https://1.12.12.12/dns-query
-*npmjs.com = server:https://1.12.12.12/dns-query
-*npmjs.org = server:https://1.12.12.12/dns-query
+*.npm.community = server:https://1.12.12.12/dns-query
+*.npmjs.com = server:https://1.12.12.12/dns-query
+*.npmjs.org = server:https://1.12.12.12/dns-query
 
 # > Apple
 # refer: https://support.apple.com/zh-cn/HT210060
-*networking.apple = server:https://doh.dns.apple.com/dns-query
-*www-cdn.icloud.com.akadns.net = server:https://doh.dns.apple.com/dns-query
+*.networking.apple = server:https://doh.dns.apple.com/dns-query
+*.www-cdn.icloud.com.akadns.net = server:https://doh.dns.apple.com/dns-query
 # Apple.com
 *.apple.com = server:119.29.29.29
 # iCloud.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query
-*apple-icloud.cn = server:https://1.12.12.12/dns-query
-*appleicloud.cn = server:https://1.12.12.12/dns-query
-*icloud-apple.cn = server:https://1.12.12.12/dns-query
-*icloud.com.cn = server:https://1.12.12.12/dns-query
-*icloud.net.cn = server:https://1.12.12.12/dns-query
-*icloudapple.cn = server:https://1.12.12.12/dns-query
-*me.com = server:https://1.12.12.12/dns-query
+*.apple-icloud.cn = server:https://1.12.12.12/dns-query
+*.appleicloud.cn = server:https://1.12.12.12/dns-query
+*.icloud-apple.cn = server:https://1.12.12.12/dns-query
+*.icloud.com.cn = server:https://1.12.12.12/dns-query
+*.icloud.net.cn = server:https://1.12.12.12/dns-query
+*.icloudapple.cn = server:https://1.12.12.12/dns-query
+*.me.com = server:https://1.12.12.12/dns-query
 # Apple-CN
-*netcts.cdn-apple.com = server:https://doh.pub/dns-query
-*apple-mapkit.com = server:119.29.29.29
+*.netcts.cdn-apple.com = server:https://doh.pub/dns-query
+*.apple-mapkit.com = server:119.29.29.29
 
 # Google CDN
-*blog.google = server:https://101.101.101.101/dns-query
-*googletraveladservices.com = server:https://101.101.101.101/dns-query
-*dl.google.com = server:https://101.101.101.101/dns-query
-*dl.l.google.com = server:https://101.101.101.101/dns-query
-*clientservices.googleapis.com = server:https://101.101.101.101/dns-query
-*update.googleapis.com = server:https://101.101.101.101/dns-query
-*translate.googleapis.com = server:https://101.101.101.101/dns-query
-*fonts.googleapis.com = server:https://101.101.101.101/dns-query
-*fonts.gstatic.com = server:https://101.101.101.101/dns-query
+*.blog.google = server:https://101.102.103.104/dns-query
+*.googletraveladservices.com = server:https://101.102.103.104/dns-query
+*.dl.google.com = server:https://101.102.103.104/dns-query
+*.dl.l.google.com = server:https://101.102.103.104/dns-query
+*.clientservices.googleapis.com = server:https://101.102.103.104/dns-query
+*.update.googleapis.com = server:https://101.102.103.104/dns-query
+*.translate.googleapis.com = server:https://101.102.103.104/dns-query
+*.fonts.googleapis.com = server:https://101.102.103.104/dns-query
+*.fonts.gstatic.com = server:https://101.102.103.104/dns-query
 
 # Google STUN
-*stun.l.google.com = server:https://doh.pub/dns-query
-*stun?.l.google.com = server:https://doh.pub/dns-query
+*.stun.l.google.com = server:https://doh.pub/dns-query
+*.stun?.l.google.com = server:https://doh.pub/dns-query
 
 # > Alphabet
 # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
-# *.google = server:https://101.101.101.101/dns-query
-*.google.com = server:https://101.101.101.101/dns-query
-*.google.com.?? = server:https://101.101.101.101/dns-query
+*.google = server:https://101.102.103.104/dns-query
+*.google.com = server:https://101.102.103.104/dns-query
+*.google.com.?? = server:https://101.102.103.104/dns-query
 # Google sites
-# *.goog = server:https://101.101.101.101/dns-query
+*.goog = server:https://101.102.103.104/dns-query
 # Google 静态资源
-*.gstatic.com = server:https://101.101.101.101/dns-query
+*.gstatic.com = server:https://101.102.103.104/dns-query
 # Google Photos
-*.ggpht.com = server:https://101.101.101.101/dns-query
+*.ggpht.com = server:https://101.102.103.104/dns-query
 # Google 用户上传数据
-*.googleusercontent.com = server:https://101.101.101.101/dns-query
+*.googleusercontent.com = server:https://101.102.103.104/dns-query
 # Google APIs
-*.googleapis.com = server:https://101.101.101.101/dns-query
+*.googleapis.com = server:https://101.102.103.104/dns-query
 # Google backbone
-*.1e100.net = server:https://101.101.101.101/dns-query
+*.1e100.net = server:https://101.102.103.104/dns-query
 # Youtube sites
-*.youtube = server:https://101.101.101.101/dns-query
+*.youtube = server:https://101.102.103.104/dns-query
 # Youtube
-*.youtube.com = server:https://101.101.101.101/dns-query
+*.youtube.com = server:https://101.102.103.104/dns-query
 # Youtube 图片
-*.ytimg.com = server:https://101.101.101.101/dns-query
+*.ytimg.com = server:https://101.102.103.104/dns-query
 # Youtube Video
-*.googlevideo.com = server:https://101.101.101.101/dns-query
+*.googlevideo.com = server:https://101.102.103.104/dns-query
 # Google Video Thumbnails
-*.gvt?.com = server:https://101.101.101.101/dns-query
+*.gvt?.com = server:https://101.102.103.104/dns-query
 # reCaptcha
-*.recaptcha.net = server:https://101.101.101.101/dns-query
+*.recaptcha.net = server:https://101.102.103.104/dns-query
 # Gmail
-*.gmail.com = server:https://101.101.101.101/dns-query
+*.gmail.com = server:https://101.102.103.104/dns-query
 # Google Source
-*.googlesource.com = server:https://101.101.101.101/dns-query
+*.googlesource.com = server:https://101.102.103.104/dns-query
 # Google AD Services
 *.googleadservices.com = server:https://dns.adguard-dns.com/dns-query
 # DoubleClick
-*.doubleclick.net = server:https://101.101.101.101/dns-query
+*.doubleclick.net = server:https://101.102.103.104/dns-query
 # AdSense
 *.adsense.com = server:https://1.1.1.1/dns-query
 # AdSense Custom Search Ads
@@ -138,35 +138,35 @@ ordns.he.net = 74.82.42.42
 # AdSense for mobile apps
 *.adsenseformobileapps.com = server:https://1.1.1.1/dns-query
 # Google shortened URLs
-*.gle = server:https://101.101.101.101/dns-query
+*.gle = server:https://101.102.103.104/dns-query
 # Google URL Shortener
-goo.gl = server:https://101.101.101.101/dns-query
+*.goo.gl = server:https://101.102.103.104/dns-query
 
 # Twitter / X
-*twitter.com = server:https://101.101.101.101/dns-query
-*t.co = server:https://101.101.101.101/dns-query
-*twimg.com = server:https://101.101.101.101/dns-query
-*x.com = server:https://101.101.101.101/dns-query
-*pscp.tv = server:https://101.101.101.101/dns-query
+twitter.com = server:https://101.102.103.104/dns-query
+t.co = server:https://101.102.103.104/dns-query
+*.twimg.com = server:https://101.102.103.104/dns-query
+*.x.com = server:https://101.102.103.104/dns-query
+*.pscp.tv = server:https://101.102.103.104/dns-query
 
 # Telegram
-*graph.org = server:https://101.101.101.101/dns-query
-*t.me = server:https://101.101.101.101/dns-query
-*telegram.me = server:https://101.101.101.101/dns-query
-*telegram.org = server:https://101.101.101.101/dns-query
-*tg.dev = server:https://101.101.101.101/dns-query
-*tx.me = server:https://101.101.101.101/dns-query
+*.graph.org = server:https://101.102.103.104/dns-query
+*.t.me = server:https://101.102.103.104/dns-query
+*.telegram.me = server:https://101.102.103.104/dns-query
+*.telegram.org = server:https://101.102.103.104/dns-query
+*.tg.dev = server:https://101.102.103.104/dns-query
+*.tx.me = server:https://101.102.103.104/dns-query
 
 # > Cloudflare
 # refer: https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/
-*.cloudflare.com = server:1.1.1.1
+*.cloudflare.com = server:1.1.1.2
 # Cloudflare Stream
-*.cloudflarestream.com = server:1.1.1.1
+*.cloudflarestream.com = server:1.1.1.2
 # Cloudflare Client
-*.cloudflareclient.com = server:1.1.1.1
+*.cloudflareclient.com = server:1.1.1.2
 # Cloudflare Web Analytics
 *.cloudflareinsights.com = server:https://1.1.1.1/dns-query
-# Cloudflare 1.1.1.1
+# Cloudflare
 *.every1dns.net = server:https://1.1.1.1/dns-query
 # Cloudflare SSL Certificate
 # *.cloudflaressl.com = server:https://1.1.1.1/dns-query
@@ -202,7 +202,7 @@ goo.gl = server:https://101.101.101.101/dns-query
 # mmstat 数据统计 广告追踪
 *.mmstat.com = server:https://dns.alidns.com/dns-query
 # 淘宝短网址
-tb.cn = server:https://dns.alidns.com/dns-query
+*.tb.cn = server:https://dns.alidns.com/dns-query
 
 # > 阿里云
 # refer: https://www.alidns.com
@@ -300,7 +300,7 @@ tb.cn = server:https://dns.alidns.com/dns-query
 *.smtcdns.com = server:https://doh.pub/dns-query
 *.smtcdns.net = server:https://doh.pub/dns-query
 # 腾讯短网址
-url.cn = server:https://doh.pub/dns-query
+*.url.cn = server:https://doh.pub/dns-query
 
 # > 百度
 # refer: https://dudns.baidu.com/support/localdns/Address/index.html
@@ -336,7 +336,7 @@ url.cn = server:https://doh.pub/dns-query
 *.bcehost.com = server:180.76.76.76
 *.bcehosts.com = server:180.76.76.76
 # 百度短网址
-dwz.cn = server:180.76.76.76
+*.dwz.cn = server:180.76.76.76
 
 # > Bytedance
 # refer: https://www.volcengine.com/docs/6758/179060
@@ -431,7 +431,7 @@ dwz.cn = server:180.76.76.76
 *.bilivideo.com = server:https://223.5.5.5/dns-query
 *.bilivideo.cn = server:https://223.5.5.5/dns-query
 # BiliBili短网址
-acg.tv = server:https://223.5.5.5/dns-query
+*.acg.tv = server:https://223.5.5.5/dns-query
 
 # > 京东
 *.jd.com = server:https://doh.pub/dns-query
@@ -446,7 +446,7 @@ acg.tv = server:https://223.5.5.5/dns-query
 # 京东云 全局负载均衡
 *.jdgslb.com = server:https://doh.pub/dns-query
 # 京东短网址
-3.cn = server:https://doh.pub/dns-query
+*.3.cn = server:https://doh.pub/dns-query
 
 # > 🇨🇳 CHN
 # CNNIC SDNS
