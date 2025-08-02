@@ -1,4 +1,5 @@
-#EXTM3U
+#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
+
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV01" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="央视",CCTV-1 高清 [综合频道]
 http://192.168.123.1:4022/udp/239.254.96.96:8550
 #EXTINF:-1 tvg-id="2" tvg-name="CCTV02" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视",CCTV-2 高清 [财经频道]
@@ -252,4 +253,5 @@ http://192.168.123.1:4022/udp/239.69.1.98:10224
 #EXTINF:-1 tvg-id="1307" tvg-name="新动漫" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/xindongman.png" group-title="地方",新动漫
 http://192.168.123.1:4022/udp/239.69.1.187:10764
 #EXTINF:-1 tvg-id="6596" tvg-name="书画" tvg-logo="http://epg.51zmt.top:8000/tb1/qt/CCTVPAYFEE37.jpg" group-title="地方",书画
+
 http://192.168.123.1:4022/udp/239.69.1.189:10776
