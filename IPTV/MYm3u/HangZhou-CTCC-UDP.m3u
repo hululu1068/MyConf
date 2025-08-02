@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml" catchup="append" catchup-source="?playseek=${(b)yyyyMMddHHmmss}-${(e)yyyyMMddHHmmss}"
 
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="https://github.com/hululu1068/MyConf/raw/main/IPTV/iptv-logo/CCTV1.png" group-title="央视高清",CCTV1
 http://192.168.123.1:4022/rtp/233.50.201.118:5140
