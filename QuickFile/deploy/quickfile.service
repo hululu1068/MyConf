@@ -1,0 +1,33 @@
+[Unit]
+Description=QuickFile lightweight file manager
+After=network.target
+
+[Service]
+Type=simple
+User=jack
+Group=jack
+
+# Create /run/quickfile automatically and place the Unix socket inside it.
+RuntimeDirectory=quickfile
+RuntimeDirectoryMode=0755
+UMask=007
+
+ExecStart=/usr/local/bin/quickfile \
+  -dir /home/jack/ \
+  -api /quickfile/api/ \
+  -static /quickfile/static/ \
+  -user jack \
+  -pass Jack10087 \
+  -sock /run/quickfile/quickfile.sock
+
+Restart=always
+RestartSec=2
+LimitNOFILE=200000
+
+# Basic hardening (adjust if your environment needs broader access)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
